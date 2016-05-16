@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  友盟统计
+//
+//  Created by 赵宏亚 on 16/5/16.
+//  Copyright © 2016年 赵宏亚. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "UMMobClick/MobClick.h"
+
+#endif /* PrefixHeader_pch */

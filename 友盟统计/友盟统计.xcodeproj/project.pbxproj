@@ -15,6 +15,11 @@
 		FA56C40E1CE95C870048B42A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA56C40C1CE95C870048B42A /* LaunchScreen.storyboard */; };
 		FA56C4191CE95C870048B42A /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56C4181CE95C870048B42A /* ____Tests.m */; };
 		FA56C4241CE95C870048B42A /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56C4231CE95C870048B42A /* ____UITests.m */; };
+		FAED59B31CE9642500EF7D4A /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59B21CE9642500EF7D4A /* UMMobClick.framework */; };
+		FAED59B51CE9647A00EF7D4A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59B41CE9647A00EF7D4A /* CoreTelephony.framework */; };
+		FAED59B71CE9648D00EF7D4A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59B61CE9648D00EF7D4A /* libz.tbd */; };
+		FAED59B91CE964AD00EF7D4A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */; };
+		FAED59BB1CE964D000EF7D4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59BA1CE964D000EF7D4A /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		FA56C41F1CE95C870048B42A /* 友盟统计UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "友盟统计UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA56C4231CE95C870048B42A /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		FA56C4251CE95C870048B42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAED59B21CE9642500EF7D4A /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		FAED59B41CE9647A00EF7D4A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FAED59B61CE9648D00EF7D4A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FAED59BA1CE964D000EF7D4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FAED59BC1CE9659900EF7D4A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAED59BB1CE964D000EF7D4A /* Security.framework in Frameworks */,
+				FAED59B91CE964AD00EF7D4A /* libsqlite3.tbd in Frameworks */,
+				FAED59B71CE9648D00EF7D4A /* libz.tbd in Frameworks */,
+				FAED59B51CE9647A00EF7D4A /* CoreTelephony.framework in Frameworks */,
+				FAED59B31CE9642500EF7D4A /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,10 @@
 		FA56C3F21CE95C870048B42A = {
 			isa = PBXGroup;
 			children = (
+				FAED59BA1CE964D000EF7D4A /* Security.framework */,
+				FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */,
+				FAED59B61CE9648D00EF7D4A /* libz.tbd */,
+				FAED59B41CE9647A00EF7D4A /* CoreTelephony.framework */,
 				FA56C3FD1CE95C870048B42A /* 友盟统计 */,
 				FA56C4171CE95C870048B42A /* 友盟统计Tests */,
 				FA56C4221CE95C870048B42A /* 友盟统计UITests */,
@@ -101,6 +121,7 @@
 		FA56C3FD1CE95C870048B42A /* 友盟统计 */ = {
 			isa = PBXGroup;
 			children = (
+				FAED59B21CE9642500EF7D4A /* UMMobClick.framework */,
 				FA56C4011CE95C870048B42A /* AppDelegate.h */,
 				FA56C4021CE95C870048B42A /* AppDelegate.m */,
 				FA56C4041CE95C870048B42A /* ViewController.h */,
@@ -108,6 +129,7 @@
 				FA56C4071CE95C870048B42A /* Main.storyboard */,
 				FA56C40A1CE95C870048B42A /* Assets.xcassets */,
 				FA56C40C1CE95C870048B42A /* LaunchScreen.storyboard */,
+				FAED59BC1CE9659900EF7D4A /* PrefixHeader.pch */,
 				FA56C40F1CE95C870048B42A /* Info.plist */,
 				FA56C3FE1CE95C870048B42A /* Supporting Files */,
 			);
@@ -415,6 +437,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/友盟统计",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/友盟统计/PrefixHeader.pch";
 				INFOPLIST_FILE = "友盟统计/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
@@ -426,6 +453,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/友盟统计",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/友盟统计/PrefixHeader.pch";
 				INFOPLIST_FILE = "友盟统计/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
@@ -498,6 +530,7 @@
 				FA56C42A1CE95C870048B42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA56C42B1CE95C870048B42A /* Build configuration list for PBXNativeTarget "友盟统计Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +539,7 @@
 				FA56C42D1CE95C870048B42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA56C42E1CE95C870048B42A /* Build configuration list for PBXNativeTarget "友盟统计UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +548,7 @@
 				FA56C4301CE95C870048B42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

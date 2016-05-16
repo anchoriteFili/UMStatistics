@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UMConfigInstance.appKey = @"xxxxxxxxxxxxxx...";
+    UMConfigInstance.channelId = @"Web";
+    
+    
+    
+    
     return YES;
 }
 
