@@ -12,5 +12,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UMMobClick/MobClick.h"
+#import "BaseClickAttribute.h"
 
 #endif /* PrefixHeader_pch */

@@ -14,12 +14,24 @@
 
 @implementation AppDelegate
 
+- (void)umengTrack {
+    //    [MobClick setAppVersion:XcodeAppVersion]; //参数为NSString * 类型,自定义app版本信息，如果不设置，默认从CFBundleVersion里取
+    
+    UMConfigInstance.appKey = @"5718e84467e58ec1c4003aa5";
+//    UMConfigInstance.token = @"5718e84467e58ec1c4003aa5";
+//    UMConfigInstance.secret = @"secretstringaldfkals";
+    //    UMConfigInstance.eSType = E_UM_GAME;
+    [MobClick startWithConfigure:UMConfigInstance];
+    [MobClick setLogEnabled:YES];
+    
+    
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    UMConfigInstance.appKey = @"xxxxxxxxxxxxxx...";
-    UMConfigInstance.channelId = @"Web";
+    //  友盟的方法本身是异步执行，所以不需要再异步调用
+    [self umengTrack];
     
     return YES;
 }

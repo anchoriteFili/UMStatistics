@@ -20,6 +20,7 @@
 		FAED59B71CE9648D00EF7D4A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59B61CE9648D00EF7D4A /* libz.tbd */; };
 		FAED59B91CE964AD00EF7D4A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */; };
 		FAED59BB1CE964D000EF7D4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED59BA1CE964D000EF7D4A /* Security.framework */; };
+		FAED59C01CE9709F00EF7D4A /* BaseClickAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FAED59BF1CE9709F00EF7D4A /* BaseClickAttribute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FAED59BA1CE964D000EF7D4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FAED59BC1CE9659900EF7D4A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FAED59BE1CE9709F00EF7D4A /* BaseClickAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClickAttribute.h; sourceTree = "<group>"; };
+		FAED59BF1CE9709F00EF7D4A /* BaseClickAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClickAttribute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				FA56C4021CE95C870048B42A /* AppDelegate.m */,
 				FA56C4041CE95C870048B42A /* ViewController.h */,
 				FA56C4051CE95C870048B42A /* ViewController.m */,
+				FAED59BE1CE9709F00EF7D4A /* BaseClickAttribute.h */,
+				FAED59BF1CE9709F00EF7D4A /* BaseClickAttribute.m */,
 				FA56C4071CE95C870048B42A /* Main.storyboard */,
 				FA56C40A1CE95C870048B42A /* Assets.xcassets */,
 				FA56C40C1CE95C870048B42A /* LaunchScreen.storyboard */,
@@ -237,6 +242,7 @@
 				TargetAttributes = {
 					FA56C3FA1CE95C870048B42A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = GM2EX5ALF4;
 					};
 					FA56C4131CE95C870048B42A = {
 						CreatedOnToolsVersion = 7.3;
@@ -300,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAED59C01CE9709F00EF7D4A /* BaseClickAttribute.m in Sources */,
 				FA56C4061CE95C870048B42A /* ViewController.m in Sources */,
 				FA56C4031CE95C870048B42A /* AppDelegate.m in Sources */,
 				FA56C4001CE95C870048B42A /* main.m in Sources */,
@@ -445,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hongya zhao (D9XG64TQDN)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/友盟统计",
@@ -452,8 +460,9 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/友盟统计/PrefixHeader.pch";
 				INFOPLIST_FILE = "友盟统计/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
+				PRODUCT_BUNDLE_IDENTIFIER = dasdasda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "96c029a4-181b-4adc-bf75-90ee483bee1f";
 			};
 			name = Debug;
 		};
@@ -461,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hongya zhao (D9XG64TQDN)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/友盟统计",
@@ -468,8 +478,9 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/友盟统计/PrefixHeader.pch";
 				INFOPLIST_FILE = "友盟统计/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
+				PRODUCT_BUNDLE_IDENTIFIER = dasdasda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "96c029a4-181b-4adc-bf75-90ee483bee1f";
 			};
 			name = Release;
 		};
