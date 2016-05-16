@@ -56,7 +56,7 @@
 		FA56C41F1CE95C870048B42A /* 友盟统计UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "友盟统计UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA56C4231CE95C870048B42A /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		FA56C4251CE95C870048B42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAED59B21CE9642500EF7D4A /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		FAED59B21CE9642500EF7D4A /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "友盟统计/UMMobClick.framework"; sourceTree = "<group>"; };
 		FAED59B41CE9647A00EF7D4A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		FAED59B61CE9648D00EF7D4A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -97,10 +97,7 @@
 		FA56C3F21CE95C870048B42A = {
 			isa = PBXGroup;
 			children = (
-				FAED59BA1CE964D000EF7D4A /* Security.framework */,
-				FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */,
-				FAED59B61CE9648D00EF7D4A /* libz.tbd */,
-				FAED59B41CE9647A00EF7D4A /* CoreTelephony.framework */,
+				FAED59BD1CE966CC00EF7D4A /* framework */,
 				FA56C3FD1CE95C870048B42A /* 友盟统计 */,
 				FA56C4171CE95C870048B42A /* 友盟统计Tests */,
 				FA56C4221CE95C870048B42A /* 友盟统计UITests */,
@@ -121,7 +118,6 @@
 		FA56C3FD1CE95C870048B42A /* 友盟统计 */ = {
 			isa = PBXGroup;
 			children = (
-				FAED59B21CE9642500EF7D4A /* UMMobClick.framework */,
 				FA56C4011CE95C870048B42A /* AppDelegate.h */,
 				FA56C4021CE95C870048B42A /* AppDelegate.m */,
 				FA56C4041CE95C870048B42A /* ViewController.h */,
@@ -160,6 +156,18 @@
 				FA56C4251CE95C870048B42A /* Info.plist */,
 			);
 			path = "友盟统计UITests";
+			sourceTree = "<group>";
+		};
+		FAED59BD1CE966CC00EF7D4A /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				FAED59BA1CE964D000EF7D4A /* Security.framework */,
+				FAED59B81CE964AD00EF7D4A /* libsqlite3.tbd */,
+				FAED59B61CE9648D00EF7D4A /* libz.tbd */,
+				FAED59B21CE9642500EF7D4A /* UMMobClick.framework */,
+				FAED59B41CE9647A00EF7D4A /* CoreTelephony.framework */,
+			);
+			name = framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

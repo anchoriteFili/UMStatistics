@@ -21,9 +21,6 @@
     UMConfigInstance.appKey = @"xxxxxxxxxxxxxx...";
     UMConfigInstance.channelId = @"Web";
     
-    
-    
-    
     return YES;
 }
 
